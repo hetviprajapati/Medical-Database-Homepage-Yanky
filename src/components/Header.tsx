@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white">
-      <div className="mx-auto max-w-7xl px-5">
+      <div className="mx-auto max-w-6xl px-5">
         <div className="flex items-center justify-between py-2">
           <div className="flex min-w-0 items-center gap-4 lg:gap-7">
             <a href="#" className="shrink-0 text-[30px] font-bold tracking-[-1.5px] text-navy sm:text-[34px]">

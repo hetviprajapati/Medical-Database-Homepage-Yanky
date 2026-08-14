@@ -38,7 +38,7 @@ const footerItems = [
 export default function Footer() {
   return (
     <footer className="bg-background">
-      <div className="mx-auto max-w-6xl px-5 py-5 xl:px-0">
+      <div className="mx-auto max-w-5xl px-5 py-5 xl:px-0">
         <p className="text-[13px] font-bold leading-[1.35] text-brown-dark">
           <strong>Medical Disclaimer:</strong> Content is for research and educational purposes only. RMSSD values are computed from raw RR
           intervals per the 1996 Task Force standards. This database does not provide medical advice. Data are community-submitted and

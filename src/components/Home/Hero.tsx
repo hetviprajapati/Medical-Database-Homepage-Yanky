@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="mt-4">
       <h1 className="text-[48px] font-bold leading-[1.05] tracking-[-2px] text-navy sm:text-[64px]">Show Your Beats.</h1>
 
-      <p className="max-w-300 text-[18px] leading-7 text-gray-dark font-medium">
+      <p className="max-w-300 text-[16px] leading-7 text-gray-dark font-medium">
         Open peer-reviewed database for True RMSSD — standardized HRV metrics from consumer devices, validated with open protocols.
       </p>
 

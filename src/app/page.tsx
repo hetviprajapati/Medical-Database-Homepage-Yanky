@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <div className="mx-auto max-w-6xl px-5 xl:px-0">
+        <div className="mx-auto max-w-5xl px-5 xl:px-0">
           <Hero />
           <HubGrid />
           <DataPreview />
