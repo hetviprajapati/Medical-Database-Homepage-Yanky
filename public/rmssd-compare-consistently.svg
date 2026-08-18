@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+  <defs>
+    <linearGradient id="bgC" x1="20" y1="15" x2="160" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3EDFF"/>
+      <stop offset="1" stop-color="#DDF2EE"/>
+    </linearGradient>
+    <linearGradient id="barC" x1="38" y1="55" x2="142" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F70C8"/>
+      <stop offset="0.55" stop-color="#5366D8"/>
+      <stop offset="1" stop-color="#19AD99"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="144" height="104" rx="24" fill="url(#bgC)"/>
+
+  <!-- Two measurements being compared -->
+  <rect x="31" y="42" width="52" height="48" rx="11" fill="#F8FCFF" stroke="#BFD7EA" stroke-width="2"/>
+  <rect x="97" y="42" width="52" height="48" rx="11" fill="#F8FCFF" stroke="#BFD7EA" stroke-width="2"/>
+
+  <!-- Same measurement conditions: three aligned controls -->
+  <circle cx="44" cy="54" r="4" fill="#2F70C8"/>
+  <circle cx="57" cy="54" r="4" fill="#5366D8"/>
+  <circle cx="70" cy="54" r="4" fill="#19AD99"/>
+
+  <circle cx="110" cy="54" r="4" fill="#2F70C8"/>
+  <circle cx="123" cy="54" r="4" fill="#5366D8"/>
+  <circle cx="136" cy="54" r="4" fill="#19AD99"/>
+
+  <!-- Matching measurement bars -->
+  <path d="M41 73H73" stroke="#B8CEE1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M107 73H139" stroke="#B8CEE1" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M47 73V84M59 73V84M71 73V84"
+        stroke="url(#barC)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M113 73V84M125 73V84M137 73V84"
+        stroke="url(#barC)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Consistency connector -->
+  <path d="M83 66H97" stroke="#6D89AA" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M88 62L83 66L88 70M92 62L97 66L92 70"
+        stroke="#6D89AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Bottom consistency line -->
+  <path d="M50 102H130" stroke="#9AB9D3" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="50" cy="102" r="4" fill="#2F70C8"/>
+  <circle cx="90" cy="102" r="4" fill="#5366D8"/>
+  <circle cx="130" cy="102" r="4" fill="#19AD99"/>
+</svg>

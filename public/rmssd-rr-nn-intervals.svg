@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="25" y1="22" x2="136" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5EEFF"/>
+      <stop offset="1" stop-color="#D8F1ED"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="54" y1="45" x2="111" y2="103" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F70C8"/>
+      <stop offset="1" stop-color="#153F91"/>
+    </linearGradient>
+    <linearGradient id="interval" x1="39" y1="122" x2="122" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3C7BD3"/>
+      <stop offset="1" stop-color="#19B39D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft colored background -->
+  <circle cx="80" cy="80" r="58" fill="url(#bg)"/>
+
+  <!-- Heartbeat symbols: intentionally not a waveform -->
+  <path
+    d="M63 49
+       C56 43 46 47 46 56
+       C46 69 61 79 80 96
+       C99 79 114 69 114 56
+       C114 47 104 43 97 49
+       C92 53 87 60 80 67
+       C73 60 68 53 63 49Z"
+    fill="#F4FBFF"
+    stroke="url(#heart)"
+    stroke-width="4.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Small colored heartbeat accents -->
+  <path
+    d="M57 59C61 56 65 57 68 61"
+    stroke="#4D91E8"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 61C95 57 99 56 103 59"
+    stroke="#27B6A3"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <!-- Beat markers -->
+  <circle cx="50" cy="108" r="7" fill="#2F70C8"/>
+  <circle cx="81" cy="108" r="7" fill="#536DDB"/>
+  <circle cx="116" cy="108" r="7" fill="#1CB49F"/>
+
+  <!-- Beat center dots -->
+  <circle cx="50" cy="108" r="2.5" fill="white"/>
+  <circle cx="81" cy="108" r="2.5" fill="white"/>
+  <circle cx="116" cy="108" r="2.5" fill="white"/>
+
+  <!-- Interval measurement ruler -->
+  <path d="M50 123H81" stroke="#3C7BD3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M81 123H116" stroke="#19B39D" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- First interval arrowheads -->
+  <path d="M50 123L55 119M50 123L55 127" stroke="#3C7BD3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M81 123L76 119M81 123L76 127" stroke="#3C7BD3" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Second interval arrowheads -->
+  <path d="M81 123L86 119M81 123L86 127" stroke="#19B39D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M116 123L111 119M116 123L111 127" stroke="#19B39D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Measurement ticks -->
+  <path d="M50 118V128M81 118V128M116 118V128"
+        stroke="#174A92" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Small data dots -->
+  <circle cx="38" cy="50" r="3.5" fill="#2F70C8" opacity=".75"/>
+  <circle cx="124" cy="49" r="4" fill="#1CB49F" opacity=".8"/>
+</svg>

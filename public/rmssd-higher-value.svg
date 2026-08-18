@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+  <defs>
+    <linearGradient id="bgH" x1="20" y1="15" x2="160" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3EEFF"/>
+      <stop offset="1" stop-color="#DDF3ED"/>
+    </linearGradient>
+    <linearGradient id="lineH" x1="34" y1="104" x2="143" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F70C8"/>
+      <stop offset="0.55" stop-color="#5366D8"/>
+      <stop offset="1" stop-color="#19AE99"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="144" height="104" rx="24" fill="url(#bgH)"/>
+
+  <!-- subtle chart area -->
+  <path d="M34 105H146" stroke="#A9C4DC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M34 82H146M34 59H146" stroke="#C9DDEA" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <!-- rising RMSSD trend -->
+  <path d="M35 98
+           C45 96 49 88 57 89
+           C65 90 68 79 76 81
+           C84 83 89 70 97 72
+           C105 74 111 61 119 62
+           C128 63 134 49 145 43"
+        stroke="url(#lineH)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- trend points -->
+  <circle cx="57" cy="89" r="4.5" fill="#2F70C8"/>
+  <circle cx="76" cy="81" r="4.5" fill="#5366D8"/>
+  <circle cx="97" cy="72" r="4.5" fill="#5366D8"/>
+  <circle cx="119" cy="62" r="4.5" fill="#24AFA0"/>
+  <circle cx="145" cy="43" r="5" fill="#19AE99"/>
+
+  <!-- upward arrow -->
+  <path d="M128 52L145 43L137 43" stroke="#19AE99" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145 43L144 51" stroke="#19AE99" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- small positive pulse -->
+  <circle cx="39" cy="48" r="5" fill="#2F70C8" opacity=".8"/>
+  <circle cx="50" cy="39" r="3.5" fill="#19AE99" opacity=".85"/>
+</svg>

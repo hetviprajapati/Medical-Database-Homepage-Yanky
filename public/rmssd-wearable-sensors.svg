@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+  <defs>
+    <linearGradient id="wearBg" x1="20" y1="15" x2="160" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5EDFF"/>
+      <stop offset="1" stop-color="#DDF2EE"/>
+    </linearGradient>
+    <linearGradient id="wearBand" x1="48" y1="48" x2="132" y2="101" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F70C8"/>
+      <stop offset="0.55" stop-color="#5365D8"/>
+      <stop offset="1" stop-color="#19AD99"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="144" height="104" rx="24" fill="url(#wearBg)"/>
+
+  <!-- wearable chest strap -->
+  <path d="M48 48
+           C58 42 70 39 80 39
+           C90 39 102 42 112 48
+           L125 57
+           C131 61 134 68 134 76
+           C134 86 128 94 119 99
+           C107 105 94 108 80 108
+           C66 108 53 105 41 99
+           C32 94 26 86 26 76
+           C26 68 29 61 35 57
+           L48 48Z"
+        fill="#F8FCFF" stroke="url(#wearBand)" stroke-width="4"/>
+
+  <!-- sensor module -->
+  <rect x="67" y="61" width="26" height="25" rx="7"
+        fill="#D8E9FF" stroke="#2F70C8" stroke-width="2.5"/>
+  <circle cx="80" cy="73.5" r="6" fill="#19AD99"/>
+  <circle cx="80" cy="73.5" r="2.5" fill="#F8FCFF"/>
+
+  <!-- optical/sensor waves -->
+  <path d="M101 61C108 64 112 69 112 75C112 81 108 86 101 89"
+        stroke="#19AD99" stroke-width="3" stroke-linecap="round"/>
+  <path d="M108 55C118 60 123 67 123 75C123 83 118 90 108 95"
+        stroke="#5365D8" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+
+  <!-- heartbeat signal inside wearable -->
+  <path d="M45 76H55L59 70L63 82L67 76"
+        stroke="#2F70C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- live data dots -->
+  <circle cx="39" cy="43" r="4" fill="#2F70C8"/>
+  <circle cx="128" cy="43" r="4" fill="#19AD99"/>
+  <circle cx="139" cy="52" r="3" fill="#5365D8"/>
+
+  <!-- small connection indicator -->
+  <path d="M57 113H103"
+        stroke="#A9C4DC" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="112" cy="113" r="4" fill="#19AD99"/>
+</svg>

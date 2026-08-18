@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="circleBg" x1="30" y1="25" x2="132" y2="138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4EEFF"/>
+      <stop offset="1" stop-color="#D5F2F0"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="39" y1="88" x2="122" y2="73" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#245FAE"/>
+      <stop offset="0.55" stop-color="#456FDE"/>
+      <stop offset="1" stop-color="#19B89F"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="80" cy="80" r="58" fill="url(#circleBg)"/>
+
+  <!-- Measurement grid -->
+  <path d="M36 103H125" stroke="#8CB6D9" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <path d="M43 101V106M61 101V106M79 101V106M97 101V106M115 101V106"
+        stroke="#8CB6D9" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+
+  <path d="M51 55V96M78 55V96M108 55V96"
+        stroke="#9EC8D8" stroke-width="1.5" stroke-dasharray="3 4" opacity=".55"/>
+
+  <!-- HRV waveform -->
+  <path
+    d="M37 78
+       C42 78 44 78 47 78
+       C50 78 51 69 54 69
+       C57 69 58 91 61 91
+       C64 91 65 78 69 78
+       C73 78 74 78 78 78
+       C82 78 83 64 86 64
+       C89 64 90 91 93 91
+       C96 91 98 78 101 78
+       C105 78 107 78 110 78
+       C113 78 114 71 117 71
+       C120 71 121 86 124 86
+       C126 86 128 78 131 78"
+    stroke="url(#wave)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Beat markers -->
+  <circle cx="54" cy="69" r="4" fill="#2F80ED"/>
+  <circle cx="86" cy="64" r="4" fill="#526FE2"/>
+  <circle cx="117" cy="71" r="4" fill="#1DB7A0"/>
+
+  <!-- RR interval indicators -->
+  <path d="M54 47V40M86 42V35M117 49V42"
+        stroke="#5279B7" stroke-width="1.5" stroke-linecap="round"/>
+
+  <path d="M54 42H86M86 37H117"
+        stroke="#5279B7" stroke-width="1.5" stroke-linecap="round"/>
+
+  <path d="M54 42L58 39M54 42L58 45M86 42L82 39M86 42L82 45"
+        stroke="#5279B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M86 37L90 34M86 37L90 40M117 37L113 34M117 37L113 40"
+        stroke="#19A995" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Small decorative data points -->
+  <circle cx="39" cy="55" r="3" fill="#2F80ED" opacity=".7"/>
+  <circle cx="124" cy="108" r="3.5" fill="#19B89F" opacity=".75"/>
+</svg>

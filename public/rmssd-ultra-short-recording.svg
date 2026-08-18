@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="15" x2="160" y2="125" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8EDFF"/>
+      <stop offset="1" stop-color="#DDF2EE"/>
+    </linearGradient>
+    <linearGradient id="line" x1="35" y1="75" x2="145" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5366D8"/>
+      <stop offset="0.6" stop-color="#2F70C8"/>
+      <stop offset="1" stop-color="#19AD99"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="144" height="104" rx="24" fill="url(#bg)"/>
+
+  <!-- Short recording timeline -->
+  <path d="M38 82H142" stroke="#A8C2DA" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- compressed measurement window -->
+  <rect x="51" y="45" width="78" height="29" rx="10"
+        fill="#F8FCFF" stroke="#BDD6E8" stroke-width="2"/>
+
+  <!-- heartbeat samples inside short window -->
+  <path d="M57 59H66L70 52L75 66L80 59H88L92 55L97 63L102 59H110L114 50L119 67L123 59"
+        stroke="url(#line)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- shorter endpoints -->
+  <circle cx="51" cy="82" r="5" fill="#5366D8"/>
+  <circle cx="129" cy="82" r="5" fill="#19AD99"/>
+
+  <!-- inward arrows showing shortened duration -->
+  <path d="M42 99H62M138 99H118"
+        stroke="#5366D8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M62 99L56 94M62 99L56 104"
+        stroke="#5366D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M118 99L124 94M118 99L124 104"
+        stroke="#19AD99" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- small timing dots -->
+  <circle cx="40" cy="43" r="4" fill="#2F70C8" opacity=".75"/>
+  <circle cx="140" cy="43" r="4" fill="#19AD99" opacity=".8"/>
+</svg>

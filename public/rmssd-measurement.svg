@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="28" y1="20" x2="132" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDEBFF"/>
+      <stop offset="1" stop-color="#C8EEF2"/>
+    </linearGradient>
+    <linearGradient id="watch" x1="42" y1="42" x2="112" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#123F91"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="91" y1="78" x2="142" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16B8C4"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="80" cy="80" r="58" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="48" fill="#EAF5FF" opacity=".72"/>
+
+  <!-- subtle ECG grid -->
+  <path d="M94 55H139M94 67H139M94 79H139M94 91H139M94 103H139" stroke="#A9D5E8" stroke-width="1" opacity=".55"/>
+  <path d="M100 50V108M112 50V108M124 50V108M136 50V108" stroke="#A9D5E8" stroke-width="1" opacity=".45"/>
+
+  <!-- ECG waveform -->
+  <path d="M92 82H100L104 82L108 72L112 92L117 79L121 82H127L131 66L135 96L139 82H145"
+        stroke="url(#wave)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- stopwatch crown -->
+  <rect x="68" y="31" width="24" height="8" rx="4" fill="#1764C0"/>
+  <rect x="74" y="37" width="12" height="7" rx="3.5" fill="#1764C0"/>
+
+  <!-- stopwatch body -->
+  <circle cx="72" cy="84" r="35" fill="url(#watch)"/>
+  <circle cx="72" cy="84" r="28" fill="#F8FCFF" stroke="#BBDCF7" stroke-width="2"/>
+
+  <!-- ticks -->
+  <path d="M72 60V65M72 103V108M48 84H53M91 84H96"
+        stroke="#1557A6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M55 67L58 70M89 67L86 70M55 101L58 98M89 101L86 98"
+        stroke="#6AAFF0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- hand -->
+  <path d="M72 84L86 70" stroke="#1764C0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="72" cy="84" r="5" fill="#1764C0"/>
+  <circle cx="72" cy="84" r="2" fill="white"/>
+
+  <!-- ms badge -->
+  <rect x="83" y="102" width="48" height="25" rx="8" fill="white" stroke="#D5E5F3" stroke-width="1.5"/>
+  <circle cx="94" cy="114.5" r="7" fill="#DDEEFF"/>
+  <path d="M94 110.5V114.5L97 116" stroke="#1557A6" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M94 108.5V110" stroke="#22B8A7" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="103" y="119" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0B2E75">ms</text>
+
+  <!-- decorative dots -->
+  <circle cx="37" cy="48" r="4" fill="#2F80ED"/>
+  <circle cx="46" cy="39" r="5" fill="#22C55E" opacity=".9"/>
+  <circle cx="125" cy="124" r="4" fill="#2F80ED"/>
+</svg>

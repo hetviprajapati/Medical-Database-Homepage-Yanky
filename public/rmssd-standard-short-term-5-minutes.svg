@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="18" x2="162" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3EDFF"/>
+      <stop offset="1" stop-color="#DDF2EE"/>
+    </linearGradient>
+    <linearGradient id="clock" x1="56" y1="36" x2="124" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F70C8"/>
+      <stop offset="0.55" stop-color="#5366D8"/>
+      <stop offset="1" stop-color="#19AD99"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="18" y="18" width="144" height="104" rx="24" fill="url(#bg)"/>
+
+  <!-- Clock is centered exactly in the 144px box: center = 90 -->
+  <circle cx="90" cy="68" r="34" fill="#F8FCFF" stroke="url(#clock)" stroke-width="4"/>
+
+  <!-- Clock ticks -->
+  <path d="M90 38V45M120 68H113M90 98V91M60 68H67"
+        stroke="#A8C3DB" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M69 47L74 52M111 47L106 52M111 89L106 84M69 89L74 84"
+        stroke="#B7CEE1" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Hands -->
+  <path d="M90 68V50"
+        stroke="#2F70C8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 68L104 76"
+        stroke="#19AD99" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Center -->
+  <circle cx="90" cy="68" r="5" fill="#5366D8"/>
+
+  <!-- Small timing marker below -->
+  <path d="M90 102V110"
+        stroke="#2F70C8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="90" cy="114" r="4" fill="#19AD99"/>
+</svg>
