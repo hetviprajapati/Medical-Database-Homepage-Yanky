@@ -20,9 +20,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en" className={`${nunitoSans.variable} antialiased`} data-scroll-behavior="smooth">
       <body className="min-h-screen bg-white">
-        <Header />
+        {/* <Header /> */}
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
